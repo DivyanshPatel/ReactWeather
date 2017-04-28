@@ -28637,9 +28637,18 @@
 
 	  render: function render() {
 	    return React.createElement(
-	      'h2',
+	      'div',
 	      null,
-	      'About Components!'
+	      React.createElement(
+	        'h2',
+	        null,
+	        'About'
+	      ),
+	      React.createElement(
+	        'p1',
+	        null,
+	        'This is about component'
+	      )
 	    );
 	  }
 	});
@@ -28668,7 +28677,7 @@
 	  return React.createElement(
 	    'h2',
 	    null,
-	    'Example component!'
+	    'Example'
 	  );
 	};
 
