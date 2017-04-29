@@ -13,7 +13,7 @@ module.exports = {
           throw new Error(res.data.message);
         }else{
           var temp = (res.data.main.temp-32)*(5/9);
-          return temp;
+          return res.data.main.temp;
         }
       },function (res) {
         throw new Error(res.data.message);
